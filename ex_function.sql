@@ -99,7 +99,7 @@ RETURNS VARCHAR(10)
 NOT DETERMINISTIC
 reads sql data
 BEGIN
-   return floor(RAND()*(v2 - v1)+ v1);
+   return round(RAND()*(v2 - v1)+ v1);
 END$$
 
 DELIMITER ;
